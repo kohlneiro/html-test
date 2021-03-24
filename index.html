@@ -1,5 +1,26 @@
 <!DOCTYPE html>
 <html>
+<style>
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
 <head>
 <script src="https://kit.fontawesome.com/c455839e04.js" crossorigin="anonymous"></script>
 </head>
@@ -15,9 +36,26 @@
 <i class="fab fa-youtube-square"></i>
 <i class="fas fa-file-pdf"></i>
 
-</body>
 <div id="myProgress">
   <div id="myBar">10%</div>
 </div>
 
+<div class="row">
+	<div class="column">
+	<h2>Esteira Transportadora de Roletes</h2>
+	<p>Projeto de um Mesa Esteira Transportadora de Roletes</p>
+	</div>
+	
+	<div class="column">
+	<h2>Face Shields</h2>
+	<p>Projeto de um Face Shields desenvolvidas ...</p>
+	</div>
+	
+	<div class="column">
+	<h2>Projeto Caixa de Redução</h2>
+	<p>Projeto de uma Caixa de Redução produzida através da Manufatura Aditiva</p>
+	</div>
+</div>
+
+</body>
 </html>
