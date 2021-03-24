@@ -22,7 +22,45 @@
     width: 100%;
   }
 }
+.container {
+  position: relative;
+  width: 80%;
+}
 
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  -webkit-transform: translate(-10%, -10%);
+  -ms-transform: translate(-10%, -10%);
+  transform: translate(-10%, -10%);
+  text-align: justify;
+}
 <script src="https://kit.fontawesome.com/c455839e04.js" crossorigin="anonymous"></script>
 </style>
 </head>
@@ -42,6 +80,16 @@
 	<div class="column">
 	<h2>Esteira Transportadora de Roletes</h2>
 	<p>Projeto de um Mesa Esteira Transportadora de Roletes</p>
+		<div class="container">
+			<img src="mesa_roletes.png" alt="MesaRoletes" class="image">
+			<div class="overlay">
+				<div class="text"> Projeto de uma Mesa Transportadora de Roletes
+desenvolvida com o intuito de aplicar os conhecimentos de maneira prática através
+do desenvolvimento de um produto único e pronto para fabricação, que atende às normas
+e às especificações do cliente.</div>
+			</div>
+			<a href="https://www.instagram.com/uniguacu/?hl=pt-br">Página da Uniguaçu</a>
+		</div>
 	<i class="fab fa-linkedin"></i>
 	<i class="fab fa-youtube-square"></i>
 	<i class="fas fa-file-pdf"></i>
